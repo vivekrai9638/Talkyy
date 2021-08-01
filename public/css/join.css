@@ -136,6 +136,10 @@ button:active {
   header {
     margin-bottom: 5rem;
   }
+
+  .branding {
+    font-size: 8rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
