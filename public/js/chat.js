@@ -161,10 +161,10 @@ document.querySelector("textarea").addEventListener("keydown", (e) => {
 // send button
 const button = document.querySelector("#send__btn");
 
-const media = window.matchMedia("(max-width:600px)");
+const media = window.matchMedia("(min-width:600px)");
 
 media.addEventListener("change", (e) => {
   if (e.matches) {
-    button.innerText = "Send";
-  } else button.innerText = "Send Message";
+    button.innerText = "Send Message";
+  } else button.innerText = "Send";
 });
