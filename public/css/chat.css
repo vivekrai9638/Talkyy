@@ -19,14 +19,14 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 25%;
   height: fit-content;
   padding: 1rem 1.5rem;
   /* padding: 2.5rem; */
 }
 
 .branding {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 1rem;
   border-bottom: 0.5rem solid;
   border-radius: 15px;
@@ -219,8 +219,14 @@ main {
   html {
     font-size: 50%;
   }
+  body {
+    padding: 1rem 0;
+  }
   .sidebar {
     display: none;
+  }
+  header {
+    width: 100%;
   }
   .branding {
     margin: 0 auto;
@@ -230,5 +236,3 @@ main {
     max-width: 100%;
   }
 }
-
-/* @media screen and (max-width: ); */

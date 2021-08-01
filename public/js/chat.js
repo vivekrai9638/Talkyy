@@ -157,3 +157,14 @@ document.querySelector("textarea").addEventListener("keydown", (e) => {
     e.target.form.dispatchEvent(new Event("submit", { cancelable: true }));
   }
 });
+
+// send button
+const button = document.querySelector("#send__btn");
+
+const media = window.matchMedia("(max-width:600px)");
+
+media.addEventListener("change", (e) => {
+  if (e.matches) {
+    button.innerText = "Send";
+  } else button.innerText = "Send Message";
+});
