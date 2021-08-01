@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amita&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Livvic:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/join.css" />
+    <title>Talkyy</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="branding">TALKYY <i class="fas fa-users"></i></h1>
+    </header>
+    <main>
+      <div class="join-container">
+        <h2 class="welcome">Hey, User</h2>
+        <form
+          action="chat.html"
+          enctype="multipart/form-data"
+          class="join-form"
+        >
+          <div class="form-element">
+            <label for="username">username </label>
+            <input
+              name="username"
+              placeholder="John"
+              type="text"
+              class=""
+              id="username"
+              spellcheck="false"
+              required
+              autofocus
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-element">
+            <label for="room"> room </label>
+            <input
+              name="room"
+              placeholder="Backbenchers"
+              type="text"
+              class=""
+              id="room"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <button type="submit">Let's get started</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

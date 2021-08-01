@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Carter One", cursive;
+  font-family: "Livvic", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+  background: #001a26;
+}
+
+body {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 25rem;
+  padding: 2.5rem;
+}
+
+.branding {
+  margin: 0 auto;
+  padding: 0 2rem;
+  border-bottom: 1rem solid;
+  border-radius: 30px;
+  width: fit-content;
+  text-align: center;
+  font-family: "Carter One", cursive;
+  font-size: 10rem;
+  letter-spacing: 0.5rem;
+  color: #96afb8;
+}
+main {
+  width: 100%;
+  height: 40rem;
+}
+.join-container {
+  height: 40rem;
+  width: 35rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  gap: 2rem;
+  background: #334a5138;
+  box-shadow: 0 0 4rem #000;
+  border: 0.4rem double #334a51;
+}
+.welcome {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 4rem;
+  color: #96afb8;
+  font-family: "Amita", cursive;
+}
+
+.join-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  /* align-items: center; */
+}
+.form-element {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+label {
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: #98b1aa;
+}
+
+input {
+  font-family: inherit;
+  font-weight: bold;
+  width: 62%;
+  height: 3rem;
+  border-radius: 10px;
+  padding: 1.55rem 1rem;
+  font-size: 2rem;
+  margin-left: auto;
+  /* flex-basis: 35%%; */
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  all: unset;
+  width: fit-content;
+  display: block;
+  border: 0.2rem solid #2c6675;
+  box-shadow: 0 0 1rem #005941;
+
+  font-size: 2rem;
+  color: #e6f4f1;
+  border-radius: 10px;
+  background: #334a51;
+  padding: 1rem 2.25rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2c6675;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    padding-top: 5rem;
+  }
+  header {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 42%;
+  }
+  body {
+    padding-top: 5rem;
+  }
+  header {
+    margin-bottom: 5rem;
+  }
+}
