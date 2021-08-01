@@ -162,8 +162,13 @@ document.querySelector("textarea").addEventListener("keydown", (e) => {
 const button = document.querySelector("#send__btn");
 
 const media = window.matchMedia("(min-width:600px)");
-
+try {
+  if (media.matches) button.innerText = "Send Message";
+} catch (e) {
+  console.log(e);
+}
 media.addEventListener("change", (e) => {
+  console.log(e);
   if (e.matches) {
     button.innerText = "Send Message";
   } else button.innerText = "Send";
