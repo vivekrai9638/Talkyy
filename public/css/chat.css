@@ -57,7 +57,7 @@ main {
 .messages {
   border-radius: 5px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../img/jeremy-bishop-uAfZBP-GtiA-unsplash.jpg");
+    url("../img/jeremy-bishop-uAfZBP-GtiA-unsplash-min.jpg");
   background-size: cover;
   background-position: center;
   height: 91%;
