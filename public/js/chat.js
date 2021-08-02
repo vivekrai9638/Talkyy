@@ -105,6 +105,7 @@ $messagesPanel.addEventListener("submit", (e) => {
   const message = e.target.elements.message.value;
 
   if (!message.length) return;
+  if (message.length > 2000) return window.alert("Text size too large !");
 
   if (message && lastUser !== username) {
     const html = Mustache.render(messageTemplateSelf, {
