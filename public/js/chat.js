@@ -103,6 +103,9 @@ $messagesPanel.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const message = e.target.elements.message.value;
+
+  if (!message.length) return;
+
   if (message && lastUser !== username) {
     const html = Mustache.render(messageTemplateSelf, {
       username,
@@ -154,6 +157,7 @@ socket.on("messageAdmin", (message) => {
 document.querySelector("textarea").addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
+
     e.target.form.dispatchEvent(new Event("submit", { cancelable: true }));
   }
 });
@@ -161,6 +165,7 @@ document.querySelector("textarea").addEventListener("keydown", (e) => {
 // send button
 const button = document.querySelector("#send__btn");
 
+// media query mobile
 const media = window.matchMedia("(min-width:600px)");
 try {
   if (media.matches) button.innerText = "Send Message";
@@ -168,7 +173,6 @@ try {
   console.log(e);
 }
 media.addEventListener("change", (e) => {
-  console.log(e);
   if (e.matches) {
     button.innerText = "Send Message";
   } else button.innerText = "Send";
